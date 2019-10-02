@@ -1,14 +1,108 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content class="ion-padding" class="background">
+
+  <!-- Side Menu -->
+  
+
+
+  <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+ 
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="assets/icon/special_1.png"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="assets/icon/special_2.png"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="assets/icon/special_4.png"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <!--Mask color-->
+      <div class="view">
+        <img class="d-block w-100" src="assets/icon/special_3.png"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+
+<!--/.Search-->
+<div class="s130">
+    <form>
+      <div class="inner-form">
+        <div class="input-field first-wrap">
+          <div class="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+            </svg>
+          </div>
+          <input id="search" type="text" placeholder="Enter Street Address" />
+        </div>
+        <div class="input-field second-wrap">
+          <button class="btn-search" type="button">FIND</button>
+        </div>
+      </div>
+      <div>
+        <ion-list>
+          <ion-item>
+                  <ion-thumbnail item-start>
+                      <img src="assets/icon/product_1.png">
+                    </ion-thumbnail>
+                  <ion-card-header>
+                      <ion-card-title>Muruti James Kotas</ion-card-title>
+                    <ion-card-subtitle>4.52 KM</ion-card-subtitle>
+                  </ion-card-header>
+                  <ion-badge slot="end" color="danger">Closed</ion-badge>
+            </ion-item>  
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="assets/icon/product_1.png">
+                  </ion-thumbnail>
+                <ion-card-header>
+                    <ion-card-title>Nkunku box Kotas</ion-card-title>
+                  <ion-card-subtitle>9.59 KM</ion-card-subtitle>
+                </ion-card-header>
+                <ion-badge slot="end" class="bagde">Open</ion-badge>
+          </ion-item>  
+        </ion-list>
+      </div>
+    </form>
   </div>
 </ion-content>
+<ion-footer class="button_style">
+  <ion-button class="button_style" expand="full">Login Or Sign Up</ion-button>
+</ion-footer>
